@@ -718,3 +718,40 @@ div #text {
     border: 1px solid #EF9A9A;
     display: none;
 }
+
+/* Register */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #643c2cc9;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    font-size: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.formcontainer {
+    text-align: center;
+    margin: 24px 50px 12px;
+}
+
+.formcontainer img {
+    width: 20%;
+    padding: 25px;
+}
