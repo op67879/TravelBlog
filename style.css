@@ -636,3 +636,85 @@ div #text {
     font-size: 20px;
     margin: 10px;
 }
+
+/* Log-In Form */
+
+.login-block {
+    width: 360px;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auot 100px;
+    padding: 45px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.form img {
+    width: 50%;
+    padding: 25px;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: aliceblue;
+    border: 0;
+    padding: 15px;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:active {
+    background: red;
+    color: #f2f2f2;
+}
+
+.form.message {
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: red;
+    text-decoration: none;
+
+}
+
+.form .register-form {
+    display: none;
+}
+
+.login-form #email_error,
+.login-form #pass_error {
+    margin: 10px;
+    width: 250px;
+    font-size: 18px;
+    columns: #c62828;
+    background: rgba(266, 0, 0, 0.1);
+    text-align: center;
+    padding: 4px 4px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
