@@ -1,0 +1,149 @@
+/* LOG IN & REGISTER FORM*/
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: rgb(85,49,74);
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    font-size: 20px;
+}
+ 
+button:hover {
+    opacity: 0.8;
+}
+
+.formcontainer {
+    text-align: center;
+    margin: 24px 50px 12px;
+}
+
+.formcontainer img{
+    width: 20%;
+    padding: 25px;
+}
+
+/* REGISTER FORM */
+.login-block{
+    width: 360px;
+    margin: auto;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    color: white;
+
+}
+.form img{
+    width: 50%;
+    padding: 25px;
+}
+.form input{
+    font-family: "Roboto", sans-serif;
+    outline: 1px;
+    background: #f2f2f2;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: aliceblue;
+    border:0;
+    padding: 15px;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.form button:hover,.form button:active{
+    background: red;
+    color: #f2f2f2;
+
+}
+.form.message{
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+}
+.form .message a{
+    color: red;
+    text-decoration: none;
+
+}
+.form .register-form{
+    display: none;
+}
+
+.login-form #email_error, .login-form #pass_error{
+    margin: 10px;
+    width: 250px;
+    font-size: 18px;
+    /*columns: #c62828;*/
+    background: rgba(266, 0, 0, 0.1);
+    text-align: center;
+    padding: 4px 4px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display:none;
+}
+
+/* LOG IN & REGISTER BUTTON */
+
+input[type=submit] {
+    /* margin: 10px 35px; */
+    width: 120px;
+    height: 40%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(66, 41, 58);
+    background: #f2d9c5;
+    border: 3px solid rgb(66, 41, 58);
+    box-shadow: 5px 5px 0 rgb(66, 41, 58),
+        -5px -5px 0 rgb(66, 41, 58),
+        -5px 5px 0 rgb(66, 41, 58),
+        5px -5px 0 rgb(66, 41, 58);
+    transition: 500ms ease-in-out;
+}
+  
+input[type=submit]:hover {
+    box-shadow: 20px 5px 0 rgb(66, 41, 58), -20px -5px 0 rgb(66, 41, 58);
+}
+  
+input[type=submit]:focus {
+    outline: none;
+}
+
+input[type=submit] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/* VALIDIMI I PASSWORD */ 
+.pwd-format {
+    color: white;
+    font-size: 12px;
+    display: none;
+}

@@ -1,0 +1,263 @@
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ 
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #886f80;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.rosterphoto {
+    min-height: 500px;
+    display: flex;
+    margin: 70px auto 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rosterphoto .infobox {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.rosterphoto .infobox .img-infobox {
+    position: relative;
+    overflow: hidden;
+}
+
+.rosterphoto .infobox .img-infobox img {
+    max-width: 100%;
+    transition: transform 1s;
+    opacity: 1;
+    border-radius: 50px;
+}
+
+.rosterphoto .infobox:hover .img-infobox img {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.rosterphoto .infobox .textt {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+.rosterphoto .infobox:hover .textt {
+    transform: scale(1);
+}
+
+.rosterphoto .infobox .textt .content {
+
+    top: 20%;
+    text-align: center;
+    padding: 15px;;
+    color: white;
+}
+
+.rosterphoto p {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#boxes {
+    min-height: 300px;
+    margin-top: 20px;
+
+}
+
+.rosterphoto {
+    min-height: 500px;
+    display: flex;
+    margin: 70px auto 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rosterphoto .infobox {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.rosterphoto .infobox .img-infobox {
+    position: relative;
+    overflow: hidden;
+}
+
+.rosterphoto .infobox .img-infobox img {
+    max-width: 100%;
+    transition: transform 1s;
+    opacity: 1;
+    border-radius: 50px;
+}
+
+.rosterphoto .infobox:hover .img-infobox img {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.rosterphoto .infobox .textt {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+.rosterphoto .infobox:hover .textt {
+    transform: scale(1);
+}
+
+.rosterphoto .infobox .textt .content {
+
+    top: 20%;
+    text-align: center;
+    padding: 15px;;
+    color: white;
+}
+
+.rosterphoto p {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.explore a {
+    text-decoration: none;
+}
+
+.explore {
+    background-color: #55314a;
+    border: white solid 1px;
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.explore:hover {
+    background-color: rgba(0, 139, 139, 0.5);
+    transition: 0.5s;
+}
+
+/* RATE OUR WORK */
+.raw{
+    justify-items: center;
+    justify-content: center;
+    margin:100px;
+    padding: 100px;
+}
+
+#Check1 , #Check2 , #Check3 {
+    display:none;
+}
+.block1{
+    width:200px;
+    position:relative;
+    clear:both;
+    margin:0 0 25px;
+    float: left;
+}
+span{
+    text-transform:uppercase;
+    font-family:'Roboto Condensed', sans-serif;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-size:15px;
+    float:right;
+    width:85px;
+    margin:16px 0 0;
+}
+.wrapew{
+    width:100px;
+    position: relative;
+    left:50%;
+    top:70%;
+    justify-items: center;
+    transform:translate(-50%,-50%);
+    padding:10px 10px 5px;
+}
+label{
+    width:100px;
+    height:50px;
+    box-sizing:border-box;
+    border:3px solid;
+    float:left; 
+    border-radius:100px;
+    position:relative;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+input[id=Check1]:checked + label{
+    background: green;
+}
+
+input[id=Check2]:checked + label{
+    background: orange;
+}
+
+input[id=Check3]:checked + label{
+    background: red;
+}
+
+input[type=checkbox]:checked + label:before{
+    left:50px;
+}
+
+label:before{
+    transition:.3s ease;
+    content:'';
+    width:40px;
+    height:40px;
+    position:absolute;
+    background:white;
+    left:2px;
+    top:2px;
+    box-sizing:border-box;
+    border:3px solid;
+    color:black;
+    border-radius:100px;
+}
+ #decor{
+    font-size: 25px;
+    font-family:Pushster;
+    color: white;
+    justify-content: center;
+    margin: auto;
+}

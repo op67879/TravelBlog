@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+ 
+/* ABOUT US INFO */ 
+.importantinfo {
+    padding: 15px;
+    background: #886f80;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: 2px solid #44273b ;
+}
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+article#main-col{
+    float:left;
+    width:65%;
+}
+ /* SLIDES */
+.mySlides {
+    display: none;
+    height: 650px;
+}
+
+.mySlides img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mySlides:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 139, 139, 0.00), rgba(0, 139, 139, 0.20), rgba(0, 139, 139, 1));
+    z-index: 2;
+    top: 0;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.text {
+    font-size: 100px;
+    position: absolute;
+    top:40%;
+    left:50px;
+    text-align: center;
+    z-index: 3;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: #55314a;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 10px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* OUR TEAM */
+
+.image-container_a{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_a{
+    width: 120px;
+    height: 120px;
+    margin: 2px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_a img{
+    width: 140px;
+    border-radius: 50%;
+    background-color: #557d803d;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.46);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.info-container_a{
+    width: 80%;
+    height: 400px;
+    display: flex;
+/*  justify-content: center;
+    align-items: center; */
+    background: #44273b;
+    margin: 50px auto;
+    border-radius: 50px;
+    animation: backgroundColor 5s infinite;
+}
+
+.info-container_a img:hover{
+    transform: skew(10deg);
+}
+
+@keyframes backgroundColor {
+    0%{background-color: #44273b;}
+    50% {background-color: #886f80;}
+}
+
+.info-container_a img{
+    margin-left: 5%;
+    border-radius: 50px;
+}
+
+.profile_a{
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 0;
+    margin: 0px;
+    height: 370px;
+}
+
+.name_a{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 80px;
+    padding: 0px 15px;
+    text-align: left;
+    line-height: 20px;
+    font-size: 40px;
+}
+.status_a{
+    padding: 0px 20px;
+    text-align: left;
+    line-height: 50px;
+    margin: 0;
+}
+
+.about_a{
+    height: 240px;
+    padding: 0px 20px;
+}
+
+
+/* BOOK HERE */
+
+.hideBtn{
+    background-color: #886f80;
+    border: #55314a dashed 1px;
+    width: 90%;
+    justify-content: center;
+    height: 40px;
+    margin-top: 50px;
+    border-radius: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hideBtn:hover {
+    background-color: #44273b;
+    transition: 0.5s;
+    border: none;
+}
+
+.booking {
+    color: white;
+    justify-content: center;
+    margin: 50px auto;
+    width: 90%;
+    padding: 20px;
+    border-radius: 6px;
+    background-image: radial-gradient(#55314a,#886f80);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.banner {
+    position: relative;
+    height: 100px;
+    background-image: radial-gradient(#55314a,#886f80);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+input, select, #visit {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+#visit {
+    width: calc(100% - 12px);
+    padding: 5px;
+}
+
+.item {
+    position: relative;
+    margin: 10px 0;
+}
+
+.item span {
+    color: red;
+}
+
+.colums {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.colums div {
+    width:48%;
+}
+
+input[type=radio], input[type=checkbox]  {
+    display: none;
+}
+
+label.radio {
+    position: relative;
+    display: inline-block;
+    margin: 5px 20px 15px 0;
+    cursor: pointer;
+}
+
+.question span {
+    margin-left: 30px;
+}
+
+label.radio:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+input[type=radio]:checked {
+    border: 2px solid  black;
+}
+
+label:before, label.radio:hover:before {
+    border: 2px solid  black;
+}
+
+label .radio:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 8px;
+    height: 4px;
+    border: 3px solid  black;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+input[type=radio]:checked{
+    opacity: 1;
+}
+
+label:after {
+    opacity: 1;
+}
+
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+.submit-btn {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background:  #55314a;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background:  #886f80;
+}
+.hideBtn{
+    background-color: #886f80;
+    border: #44273b dashed 1px;
+    width: 90%;
+    justify-content: center;
+    height: 40px;
+    margin-top: 50px;
+    border-radius: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hideBtn:hover {
+    background-color: #44273b;
+    transition: 0.5s;
+    border: none;
+}
+
+form {
+    justify-content: center;
+    margin: 50px auto;
+    width: 90%;
+    padding: 20px;
+    border-radius: 6px;
+    background-image: radial-gradient(#55314a,#886f80);
+    box-shadow: 0 0 8px  #2a1821;
+}
+
+.banner {
+    position: relative;
+    height: 100px;
+    background-image: radial-gradient(#55314a,#886f80);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input, select, #visit {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+
+#visit {
+    width: calc(100% - 12px);
+    padding: 5px;
+}
+
+.item {
+    position: relative;
+    margin: 10px 0;
+}
+
+.item span {
+    color: red;
+}
+
+.colums {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.colums div {
+    width:48%;
+}
+
+input[type=radio], input[type=checkbox]  {
+    display: none;
+}
+
+label.radio {
+    position: relative;
+    display: inline-block;
+    margin: 5px 20px 15px 0;
+    cursor: pointer;
+}
+
+.question span {
+    margin-left: 30px;
+}
+
+/*.question-answer label {*/
+/*    display: block;*/
+/*}*/
+
+label.radio:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+input[type=radio]:checked + label:before, label.radio:hover:before {
+    border: 2px solid  black;
+}
+
+label.radio:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 8px;
+    height: 4px;
+    border: 3px solid  black;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+input[type=radio]:checked + label:after {
+    opacity: 1;
+}
+
+/* SUBMIT BUTTON */
+
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.submit-btn {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background:  #55314a;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #886f80;
+}
+
+/* SEIZE */
+#resize-box {
+    border: 2px solid #44273b;
+    padding: 10px;
+    width: 300px;
+    resize: both;
+    overflow: auto;
+    float: right;
+    margin-top: 70px;
+}

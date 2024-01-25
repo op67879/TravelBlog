@@ -1,0 +1,354 @@
+#venice-background {
+    background-image: linear-gradient(rgba(0, 139, 139, 0.00), rgba(0, 139, 139, 0.20), rgba(0, 139, 139, 1)), url("images/venice-background.jpg");
+    background-attachment: fixed;
+    min-height: 650px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.background-image-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.background-image-text h1 {
+    font-size: 60px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: #6315156c;
+    text-shadow: 2px 2px 2px black;
+}
+
+.background-image-text p {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.flex-container .venice-text {
+    width: 75%;
+    margin-left: 25px;
+    text-align: left;
+    line-height: 25px;
+    margin-right: 25px;
+}
+
+.flex-container .venice-table-div {
+    width: 400px;
+    margin-right: 10px;
+}
+
+
+.flex-container .venice-table-div .venice-table {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+.venice-table {
+    border-collapse: collapse;
+    background-color: #c677568e;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.venice-table td, th {
+    border-bottom: solid 5px transparent;
+    text-align: left;
+    margin: 10px;
+    padding: 12px;
+}
+
+.venice-table th {
+    color: #081C15;
+}
+
+.venice-table img {
+    width: 100%;
+}
+
+.venice-table-div .venice-table th h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.venice-table td:hover, th:hover, tr:hover {
+    background-color: #6315156c;
+}
+
+div #text {
+    float: right;
+    width: 100%;
+    margin-top: 10px;
+    position: static;
+}
+
+#text ol li {
+    background-color: #c677568e;
+    margin: 5px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(tan, #6315156c);
+}
+
+#text ol a {
+    text-decoration: none;
+}
+
+#text ol li a:hover, #text ol li:hover {
+    font-size: 20px;
+    color: #272a1b;
+    background-image: linear-gradient(to right, tan, #6315156c);
+    text-transform: uppercase;
+}
+
+.venice-explore h4 {
+    color: #081C15;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    clear: both;
+}
+
+.venice-explore h6 {
+    color: #081C15;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    clear: both;
+}
+
+.venice-explore img {
+    width: 400px;
+    float: right;
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.venice-explore img:hover {
+    width: 400px;
+    float: right;
+    margin: 10px;
+    transform: scale(1.1);
+    transition: .5s;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.venice-explore p {
+    clear: both;
+}
+
+.venice-explore h5 {
+    color: #081C15;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    clear: both;
+}
+
+.venice-explore ul li {
+    list-style-type: square;
+}
+
+.venice-climate-table {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.venice-climate-table td, .venice-climate-table th {
+    border: solid 3px transparent;
+    padding: 2px;
+}
+
+.venice-climate-table td {
+    text-align: center;
+}
+
+.venice-climate-table th {
+    background-image: linear-gradient(gray, rgba(0, 0, 0, 0.3));
+}
+
+.first-row td {
+    background-image: linear-gradient(orangered, rgba(0, 0, 0, 0.3));
+}
+
+.second-row td {
+    background-image: linear-gradient(orangered, rgba(0, 0, 0, 0.3));
+}
+
+.third-row td {
+    background-image: linear-gradient(#f85d1e, rgba(0, 0, 0, 0.3));
+}
+
+.fourth-row td {
+    background-image: linear-gradient(seagreen, rgba(0, 0, 0, 0.3));
+}
+
+.fifth-row td {
+    background-image: linear-gradient(cornflowerblue, rgba(0, 0, 0, 0.3));
+}
+
+.sixth-row td {
+    background-image: linear-gradient(#b7b70d, rgba(0, 0, 0, 0.3));
+}
+
+.venice-explore span{
+    font-weight: bold;
+}
+
+.venice-demographics-table{
+    text-align: left;
+    border-collapse: collapse;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+
+.flex-container-2{
+    display: flex;
+    width: 90%;
+}
+
+.flex-container-2-lists{
+    width: 50%;
+}
+
+.flex-container-2-table{
+    width: 50%;
+}
+
+
+.venice-demographics-table th,.venice-demographics-table td{
+    padding: 10px;
+    border: 1px black solid;
+}
+
+.venice-demographics-table th{
+    background-color: #c677568e;
+    color: #081C15;
+}
+
+.venice-demographics-table-2{
+    border-collapse: collapse;
+    margin: 20px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.venice-demographics-table-2 th{
+    color: #081C15;
+}
+
+.venice-demographics-table-2 td, .venice-demographics-table-2 th{
+    padding: 20px 50px;
+    margin: 30px;
+    width: 100px;
+}
+
+.venice-demographics-table-2 tr:nth-child(even) {
+    background-color: #c677568e;
+}
+
+.venice-demographics-table-2 tr:hover{
+    transform: scale(1.1);
+}
+
+.venice-demographics-table-2 caption{
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Log-In Form */
+
+.login-block {
+    width: 360px;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auot 100px;
+    padding: 45px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.form img {
+    width: 50%;
+    padding: 25px;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: aliceblue;
+    border: 0;
+    padding: 15px;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:active {
+    background: red;
+    color: #f2f2f2;
+}
+
+.form.message {
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: red;
+    text-decoration: none;
+
+}
+
+.form .register-form {
+    display: none;
+}
+
+.login-form #email_error,
+.login-form #pass_error {
+    margin: 10px;
+    width: 250px;
+    font-size: 18px;
+    columns: #c62828;
+    background: rgba(266, 0, 0, 0.1);
+    text-align: center;
+    padding: 4px 4px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
