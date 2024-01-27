@@ -51,7 +51,7 @@
 <!-- EXPLORE - (ADMIN ADDS BOOKING PLACES) -->
 <section id="main">
     <div class="container">
-        <h1>Our highly requested island trips are back. Book them now!</h1>
+        <h1>Our highly requested trips are back. Book them now!</h1>
         <div class="rosterphoto">
             <div class="infobox">
                 <div class="img-infobox">
@@ -77,7 +77,6 @@
              foreach($products as $product){
                 echo 
                 "
-               
                 <div class='infobox'>
                 <div class='img-infobox'>
                     <img src='../images/$product[ProductName].jpg'>

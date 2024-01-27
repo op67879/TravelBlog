@@ -57,7 +57,7 @@
 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" style="width: 50%; margin: 5px auto;">
     <div class="formcontainer">
         <figure>
-            <img src="../images/beach-29046.png">
+            <img src="../images/logo.png">
             <figcaption style="font-weight: bold; font-size: 20px">LOG IN</figcaption>
         </figure>
         <hr/>

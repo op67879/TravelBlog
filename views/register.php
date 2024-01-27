@@ -51,7 +51,7 @@
     <div class="container">
         <div class="login-block">
             <div class="form">
-                <img src="../images/beach-29046.png">
+                <img src="../images/logo.png">
                 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
                     <label for="name">Name</label>
                     <input class="form-input" type="text" id="name" name="fname" placeholder="First name" required>

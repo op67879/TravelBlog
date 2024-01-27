@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Oswald:wght@200&display=swap');
+ 
+main {
+    margin-bottom: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.up {
+    text-transform: uppercase; 
+}
+
+.profile {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* LOG OUT BUTTON */
+
+.logoutButton {
+    flex-wrap: wrap-reverse;
+    /* margin: 10px 35px; */
+    flex-flow: right;
+    justify-content: flex-end;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(66, 41, 58);
+    background: #f2d9c5;
+    border: 3px solid rgb(66, 41, 58);
+    box-shadow: 5px 5px 0 rgb(66, 41, 58),
+        -5px -5px 0 rgb(66, 41, 58),
+        -5px 5px 0 rgb(66, 41, 58),
+        5px -5px 0 rgb(66, 41, 58);
+    transition: 500ms ease-in-out;
+}
+  
+.logoutButton:hover {
+    box-shadow: 20px 5px 0 rgb(66, 41, 58), -20px -5px 0 rgb(66, 41, 58);
+}
+  
+.logoutButton:focus {
+    outline: none;
+}
+
+.lobutton {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex-wrap: wrap;
+    margin: 70px 10px;
+}
+
+/* DASHBOARDS' BUTTONS */
+
+.dashboards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 100px;
+}
+
+.profileButton {
+    align-self: center;
+    background-color: #f2d9c5;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: double;
+    border-width: 6px;
+    box-shadow: rgba(0, 0, 0, .2) 20px 35px 35px -20px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 16px;
+    padding: .80rem;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 20px 255px;
+    border-bottom-right-radius: 225px 20px;
+    border-top-left-radius: 255px 20px;
+    border-top-right-radius: 20px 225px;
+    touch-action: manipulation;
+    border-color: #b67e17d8;
+}
+  
+.profileButton:hover {
+    box-shadow: rgba(0, 0, 0, .3) 4px 12px 12px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+  
+.profileButton:focus {
+    box-shadow: rgba(0, 0, 0, .3) 4px 12px 6px -6px;
+}
+
+/* EDIT BUTTON - green */
+
+.editButton {
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: rgba(157, 213, 157, 0);
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: white;
+    border-color: #034602;
+}
+
+.editButton:hover {
+    color: #fff;
+    background-color: rgb(32, 147, 57);
+    border-color: #034602;
+}
+
+/* DELETE BUTTON - red */
+
+.deleteButton {
+    color: black;
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: rgba(213, 157, 157, 0);
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: white;
+    border-color: #460202;
+    
+}
+
+.deleteButton:hover {
+    color: #fff;
+    background-color: rgb(147, 32, 32);
+    border-color: #460202;
+}
+
+/* TABLES */
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: #a795a5a2;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid rgb(85,49,74);
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: rgb(85,49,74);
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: rgba(85, 49, 74, 0.571);
+}
+
+.fl-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.264);
+}
+
+/* RESPONSIVE TABLES */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+
+    .fl-table thead {
+        float: left;
+    }
+
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid rgb(85,49,74);
+    }
+
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+
+    .fl-table tr td:nth-child(odd) {
+        background: rgba(85, 49, 74, 0.375);
+        border-right: 1px solid rgb(85,49,74);
+    }
+
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid rgb(85,49,74);
+    }
+
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* INPUT EDIT-INSERT FORMS */
+
+.data {
+    color: #f2d9c5;
+    height: 30px;
+    width: fit-content;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #b67e17d8;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input[type=text]:focus {
+    border: 3px solid #b67e17d8;
+} 

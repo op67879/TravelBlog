@@ -3,10 +3,10 @@
 /* ABOUT US INFO */ 
 .importantinfo {
     padding: 15px;
-    background: #886f80;
+    background: #c677568e;
     margin-top: 10px;
     margin-bottom: 10px;
-    outline: 2px solid #44273b ;
+    outline: 2px solid #272a1b ;
 }
 
 aside#sidebar {
@@ -41,7 +41,7 @@ article#main-col{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 139, 139, 0.00), rgba(0, 139, 139, 0.20), rgba(0, 139, 139, 1));
+    background-image: linear-gradient(#c677568e, rgba(255, 255, 255, 0.10));
     z-index: 2;
     top: 0;
 }
@@ -60,7 +60,7 @@ article#main-col{
     text-align: center;
     z-index: 3;
     font-family: 'ZCOOL KuaiLe', cursive;
-    color: #55314a;
+    color: #272a1b;
     text-shadow: 2px 2px 2px black;
     letter-spacing: 10px;
 }
@@ -114,7 +114,7 @@ article#main-col{
     display: flex;
 /*  justify-content: center;
     align-items: center; */
-    background: #44273b;
+    background: #c677568e;
     margin: 50px auto;
     border-radius: 50px;
     animation: backgroundColor 5s infinite;
@@ -125,8 +125,8 @@ article#main-col{
 }
 
 @keyframes backgroundColor {
-    0%{background-color: #44273b;}
-    50% {background-color: #886f80;}
+    0%{background-color:  rgba(255, 255, 255, 0.10);}
+    50% {background-color: rgba(148, 131, 142, 0.438);}
 }
 
 .info-container_a img{
@@ -166,8 +166,8 @@ article#main-col{
 /* BOOK HERE */
 
 .hideBtn{
-    background-color: #886f80;
-    border: #55314a dashed 1px;
+    background-color: #272a1b;
+    border: #272a1b dashed 1px;
     width: 90%;
     justify-content: center;
     height: 40px;
@@ -178,7 +178,7 @@ article#main-col{
 }
 
 .hideBtn:hover {
-    background-color: #44273b;
+    background-color: #272a1b;
     transition: 0.5s;
     border: none;
 }
@@ -190,14 +190,14 @@ article#main-col{
     width: 90%;
     padding: 20px;
     border-radius: 6px;
-    background-image: radial-gradient(#55314a,#886f80);
+    background-image: radial-gradient( rgba(255, 255, 255, 0.10),#c677568e);
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .banner {
     position: relative;
     height: 100px;
-    background-image: radial-gradient(#55314a,#886f80);
+    background-image: radial-gradient( rgba(255, 255, 255, 0.10),#c677568e);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -306,17 +306,17 @@ label:after {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background:  #55314a;
+    background:  #272a1b;
     font-size: 16px;
     color: #fff;
     cursor: pointer;
 }
 .submit-btn:hover {
-    background:  #886f80;
+    background:  #c677568e;
 }
 .hideBtn{
-    background-color: #886f80;
-    border: #44273b dashed 1px;
+    background-color: #c677568e;
+    border: #272a1b dashed 1px;
     width: 90%;
     justify-content: center;
     height: 40px;
@@ -327,7 +327,7 @@ label:after {
 }
 
 .hideBtn:hover {
-    background-color: #44273b;
+    background-color: #272a1b;
     transition: 0.5s;
     border: none;
 }
@@ -338,14 +338,14 @@ form {
     width: 90%;
     padding: 20px;
     border-radius: 6px;
-    background-image: radial-gradient(#55314a,#886f80);
+    background-image: radial-gradient(#272a1b,#c677568e);
     box-shadow: 0 0 8px  #2a1821;
 }
 
 .banner {
     position: relative;
     height: 100px;
-    background-image: radial-gradient(#55314a,#886f80);
+    background-image: radial-gradient(#272a1b,#c677568e);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -453,19 +453,19 @@ input[type=radio]:checked + label:after {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background:  #55314a;
+    background:  #272a1b;
     font-size: 16px;
     color: #fff;
     cursor: pointer;
 }
 
 .submit-btn:hover {
-    background: #886f80;
+    background: #c677568e;
 }
 
 /* SEIZE */
 #resize-box {
-    border: 2px solid #44273b;
+    border: 2px solid #272a1b;
     padding: 10px;
     width: 300px;
     resize: both;

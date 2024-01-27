@@ -1,5 +1,12 @@
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; 
+}
+
 #venice-background {
-    background-image: linear-gradient(rgba(0, 139, 139, 0.00), rgba(0, 139, 139, 0.20), rgba(0, 139, 139, 1)), url("images/venice-background.jpg");
+    background-image: linear-gradient(rgba(0, 139, 139, 0.00), rgba(0, 139, 139, 0.20), rgba(0, 139, 139, 1)), url("../images/venice-background.jpg");
+    background-origin: border-box ;
     background-attachment: fixed;
     min-height: 650px;
     text-align: center;
@@ -17,7 +24,7 @@
 .background-image-text h1 {
     font-size: 60px;
     font-family: 'ZCOOL KuaiLe', cursive;
-    color: #6315156c;
+    color: #272a1b;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -56,6 +63,7 @@
     text-align: center;
 }
 
+
 .venice-table {
     border-collapse: collapse;
     background-color: #c677568e;
@@ -83,7 +91,7 @@
 }
 
 .venice-table td:hover, th:hover, tr:hover {
-    background-color: #6315156c;
+    background-color: #272a1b;
 }
 
 div #text {
@@ -98,7 +106,7 @@ div #text {
     margin: 5px;
     height: 40px;
     border-radius: 10px;
-    background-image: linear-gradient(tan, #6315156c);
+    background-image: linear-gradient(#c677568e, #272a1b);
 }
 
 #text ol a {
@@ -107,8 +115,8 @@ div #text {
 
 #text ol li a:hover, #text ol li:hover {
     font-size: 20px;
-    color: #272a1b;
-    background-image: linear-gradient(to right, tan, #6315156c);
+    color: #44273b;
+    background-image: linear-gradient(to right, #c677568e, #272a1b);
     text-transform: uppercase;
 }
 
@@ -117,7 +125,7 @@ div #text {
     text-align: center;
     font-size: 30px;
     font-family: 'ZCOOL KuaiLe', cursive;
-    clear: both;
+    clear: both; 
 }
 
 .venice-explore h6 {
@@ -271,84 +279,121 @@ div #text {
     margin: 10px;
 }
 
-/* Log-In Form */
-
-.login-block {
-    width: 360px;
-    margin: auto;
-}
-
-.form {
-    position: relative;
-    z-index: 1;
-    max-width: 360px;
-    margin: 0 auot 100px;
-    padding: 45px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-
-.form img {
-    width: 50%;
+/* MONEY CONVERTER */
+.amount-converter {
+    margin: 25px;
     padding: 25px;
+    color: white;
+    background-color: #c677568e;
+    background-image: linear-gradient(rgba(0, 139, 139, 0.00), rgba(0, 139, 139, 0.20), rgba(0, 139, 139, 1));
+    overflow: hidden;
+    border-radius: 50px;
+    float: left;
+    position: static;
+    width: 400px;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.form input {
-    font-family: "Roboto", sans-serif;
-    outline: 1;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-.form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: aliceblue;
-    border: 0;
-    padding: 15px;
-    color: #000;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.form button:hover,
-.form button:active {
-    background: red;
-    color: #f2f2f2;
-}
-
-.form.message {
-    margin: 15px 0 0;
-    color: aliceblue;
-    font-size: 12px;
-}
-
-.form .message a {
-    color: red;
-    text-decoration: none;
-
-}
-
-.form .register-form {
-    display: none;
-}
-
-.login-form #email_error,
-.login-form #pass_error {
+#convert{
+    color: black;
+    font-size:17px;
+    background-image: linear-gradient(#c677568e,#272a1b);
+    border-radius: 50px;
     margin: 10px;
-    width: 250px;
-    font-size: 18px;
-    columns: #c62828;
-    background: rgba(266, 0, 0, 0.1);
-    text-align: center;
-    padding: 4px 4px;
-    border-radius: 3px;
-    border: 1px solid #EF9A9A;
+    padding: 10px;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* */
+.can{
+    font-family: Pushster;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #c677568e;
+}
+#click{
+    font-family: Pushster;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background-color:#c677568e;
     display: none;
+}
+#question{
+    font-family: Pushster;
+    font-size: 20px;
+    display: none;
+    color: black;
+}
+#yes{
+    display: none;
+    font-family: Pushster;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: gray;
+}
+#no{
+    display: none;
+    font-family: Pushster;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: gray;
+}
+
+/* QUESTION */
+
+.can{
+    font-family: Pushster;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #c677568e;
+}
+#click{
+    font-family: Pushster;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background-color:#c677568e;
+    display: none;
+}
+#question{
+    font-family: Pushster;
+    font-size: 20px;
+    display: none;
+    color: black;
+}
+#yes{
+    display: none;
+    font-family: Pushster;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: gray;
+}
+#no{
+    display: none;
+    font-family: Pushster;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: gray;
 }

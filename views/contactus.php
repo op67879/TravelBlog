@@ -56,7 +56,7 @@
  <!--CONTACT US FORM-->
 <div class="contactusform">
     <div class="title">
-      <h1>CONTACT US</h1>
+      <h1 style="color: white">CONTACT US</h1>
     </div>
     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
     <div class="contact-form">
@@ -78,7 +78,7 @@
 <script src="../javascript/draganddrop.js"></script>
 <script src="../javascript/scroll.js"></script>
 
-    <!-- FOOTER -->
+    <!-- FOOTER 
     <footer>
         <div class="icons">
             <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -89,7 +89,7 @@
         <br>
         <a href="mailto: op67879@ubt-uni.net">Contact us</a>
         <address>Travel Organization, Copyright &copy; 2023</address>
-    </footer>
+    </footer>-->
 </body>
 
 </html>

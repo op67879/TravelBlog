@@ -6,7 +6,7 @@
     min-height: 600px;
     background: url('../images/place.jpg') no-repeat center fixed;  
     background-size: cover;
-    border-bottom: #55314a 3px solid;
+    border-bottom: #272a1b 3px solid;
     background-origin: border-box ;
 }
 
@@ -83,8 +83,8 @@
 /* LOCAL TIME */
 .time{
     color: white;
-    background-color: #55314a;
-    border-color:#55314a;
+    background-color: #272a1b;
+    border-color:#272a1b;
     width: 95%;
     padding: 7px;
     border-radius:20px;
