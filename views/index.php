@@ -83,12 +83,12 @@
 <section id="boxes">
     <div class="container">
         <div class="box">
-            <a href="maldives.php#geography"><img src="../images/Location.png"></a>
+            <a href="venice.php#geography"><img src="../images/Location.png"></a>
             <h3 class="lpp"><i>Location</i></h3>
             <p>The location of the place.</p>
         </div>
         <div class="box">
-            <a href="maldives.php#demographics"><img src="../images/People.png"></a>
+            <a href="venice.php#demographics"><img src="../images/People.png"></a>
             <h3 class="lpp"><i>People</i></h3>
             <p>The population that lives on that place, what race predominates and what language is spoken there.</p>
         </div>
