@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/venice.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="icon" href="../images/logo.png" type="image/png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
     </style>
@@ -66,7 +66,7 @@
             </tr>
         
             <tr>
-                <td colspan="2"><img src="images/flag_of_Venice.jpg"></td>
+                <td colspan="2"><img src="../images/flag_of_Venice.jpg"></td>
             </tr>
         
             <tr>
@@ -134,9 +134,10 @@
                 <td>+39</td>
             </tr>
         </table> 
+</div>
 
 <!-- MONEY CONVERTER -->
-<section class="container">
+<!-- <section class="container">
     <div class="flex-container">
         <div class="amount-converter">
             <h1 id="convert">Convert any currency to Euro</h1>
@@ -148,7 +149,7 @@
             <p>Euro(€): <span id="euro"></span></p>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- MONEY CONVERTER (javascript)-->
 <script>
@@ -193,7 +194,7 @@
             <div class="venice-explore">
                 <h4 id="geography">Geography</h4>
                 <p>
-                    <img src="images/venice-geography.jpg" alt="venice geography">
+                    <img src="../images/venice-geography.jpg" alt="venice geography">
                     Venice's geography is unique and captivating. Situated in northeastern Italy, it's renowned for being built on a group of 118 small islands separated by canals and connected by over 400 bridges. The city is located in the Venetian Lagoon, an enclosed bay that opens onto the Adriatic Sea.
                     <br><br>
                     Its geographical layout is unlike any other city in the world. The islands on which Venice is built are a series of marshy landmasses in the lagoon, originally settled by refugees fleeing invasions on mainland Italy during the decline of the Roman Empire.
@@ -366,7 +367,7 @@
 
             <div class="venice-explore">
                 <h5 id="tourist">Tourism</h5>
-                <p><img src="images/venice-tourist.jpg" style="float: left">Venice stands as one of the globe's premier tourist destinations, magnetizing millions annually. Its allure lies in a tapestry woven from historic architecture, art, and vibrant culture. Travelers converge upon iconic landmarks such as St. Mark's Square, the Doge's Palace, and the majestic Grand Canal. Exploring the city's waterways aboard gondolas or water taxis offers an enchanting perspective on its beauty and history.
+                <p><img src="../images/venice-tourist.jpg" style="float: left">Venice stands as one of the globe's premier tourist destinations, magnetizing millions annually. Its allure lies in a tapestry woven from historic architecture, art, and vibrant culture. Travelers converge upon iconic landmarks such as St. Mark's Square, the Doge's Palace, and the majestic Grand Canal. Exploring the city's waterways aboard gondolas or water taxis offers an enchanting perspective on its beauty and history.
             
                 However, beyond its famed structures, Venice is an art lover's haven. The Venice Biennale, an internationally renowned art exhibition, casts a magnetic pull on enthusiasts from across the world. This cultural extravaganza, held every two years, unveils avant-garde installations, contemporary artworks, and thought-provoking displays that transcend boundaries and captivate the imagination.
             
@@ -375,7 +376,7 @@
                 In essence, Venice's tourism narrative extends far beyond its architectural splendors; it's a vibrant tapestry woven with art, culture, culinary delights, and a captivating nocturnal allure that leaves an indelible mark on every visitor's heart.
                 </p>
                 <h6 id="visitors">Visitors</h6>
-                <p><img src="images/venice-visitors.jpg">
+                <p><img src="../images/venice-visitors.jpg">
                     Visitors to Venice, Italy, compose a diverse tapestry of global travelers drawn by the city's unparalleled charm. Each year, millions flock to this enchanting labyrinth of canals and historic beauty, mesmerized by its timeless allure.
                     <br><br>
                     These visitors come from every corner of the world, bringing with them a kaleidoscope of cultures, languages, and perspectives. Some arrive seeking a romantic escapade, enchanted by the notion of gliding through Venetian waters on a gondola, embracing the city's fabled romanticism. Others come as art aficionados, lured by the prestigious Venice Biennale, a global stage for contemporary art that ignites creativity and sparks dialogues across boundaries.

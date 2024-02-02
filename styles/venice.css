@@ -1,11 +1,11 @@
 .container {
     width: 80%;
     margin: auto;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 #venice-background {
-    background-image: linear-gradient(rgba(0, 139, 139, 0.00), rgba(0, 139, 139, 0.20), rgba(0, 139, 139, 1)), url("../images/venice-background.jpg");
+    background-image: linear-gradient(#c677568e, rgba(0, 139, 139, 0.20), #c677568e), url("../images/venice-background.jpg");
     background-origin: border-box ;
     background-attachment: fixed;
     min-height: 650px;
@@ -63,7 +63,6 @@
     text-align: center;
 }
 
-
 .venice-table {
     border-collapse: collapse;
     background-color: #c677568e;
@@ -91,7 +90,7 @@
 }
 
 .venice-table td:hover, th:hover, tr:hover {
-    background-color: #272a1b;
+    background-image: linear-gradient(#c677569f, #f3f5ee96);
 }
 
 div #text {
@@ -238,7 +237,6 @@ div #text {
     width: 50%;
 }
 
-
 .venice-demographics-table th,.venice-demographics-table td{
     padding: 10px;
     border: 1px black solid;
@@ -280,12 +278,12 @@ div #text {
 }
 
 /* MONEY CONVERTER */
-.amount-converter {
+/* .amount-converter {
     margin: 25px;
     padding: 25px;
     color: white;
     background-color: #c677568e;
-    background-image: linear-gradient(rgba(0, 139, 139, 0.00), rgba(0, 139, 139, 0.20), rgba(0, 139, 139, 1));
+    background-image: linear-gradient(#0000005e, #c677568e, #0000005e);
     overflow: hidden;
     border-radius: 50px;
     float: left;
@@ -296,9 +294,8 @@ div #text {
 }
 
 #convert{
-    color: black;
+    color: #f7f4f4;
     font-size:17px;
-    background-image: linear-gradient(#c677568e,#272a1b);
     border-radius: 50px;
     margin: 10px;
     padding: 10px;
@@ -317,83 +314,4 @@ div #text {
     height:100%;
     width:100%;
     position:absolute;
-}
-
-/* */
-.can{
-    font-family: Pushster;
-    color: white;
-    border-radius: 10px;
-    font-size: 30px;
-    background-color: #c677568e;
-}
-#click{
-    font-family: Pushster;
-    border-radius: 10px;
-    font-size: 20px;
-    color: white;
-    background-color:#c677568e;
-    display: none;
-}
-#question{
-    font-family: Pushster;
-    font-size: 20px;
-    display: none;
-    color: black;
-}
-#yes{
-    display: none;
-    font-family: Pushster;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-    background-color: gray;
-}
-#no{
-    display: none;
-    font-family: Pushster;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-    background-color: gray;
-}
-
-/* QUESTION */
-
-.can{
-    font-family: Pushster;
-    color: white;
-    border-radius: 10px;
-    font-size: 30px;
-    background-color: #c677568e;
-}
-#click{
-    font-family: Pushster;
-    border-radius: 10px;
-    font-size: 20px;
-    color: white;
-    background-color:#c677568e;
-    display: none;
-}
-#question{
-    font-family: Pushster;
-    font-size: 20px;
-    display: none;
-    color: black;
-}
-#yes{
-    display: none;
-    font-family: Pushster;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-    background-color: gray;
-}
-#no{
-    display: none;
-    font-family: Pushster;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-    background-color: gray;
-}
+} */
