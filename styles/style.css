@@ -6,6 +6,9 @@ body {
     margin: 0;
     background-color: #c0babe;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #scroll {
@@ -188,27 +191,37 @@ header a:hover, a:visited {
 
 footer {
     padding: 20px;
-    margin-top: 20px;
     text-align: center;
-    border-bottom: #272a1b 1px solid;
+    border-top: #272a1b 1px solid;
     background-image: linear-gradient(rgba(255, 255, 255, 0.10), #c677568e);
+    margin-top: auto;
 }
 
 .icons {
-    margin: 15px 23px;
-    display: inline;
-    padding: 8px;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icons a {
     color: #272a1b;
-    padding: 30px;
+    padding: 15px; 
     font-size: 30px;
+    margin: 0 10px;
 }
 
 .icons a:hover {
     color: white;
+}
+
+@media (max-width: 768px) {
+    .icons {
+        flex-direction: column;
+    }
+
+    .icons a {
+        margin: 5px 0;
+    }
 }
 
 /* PROFILE */

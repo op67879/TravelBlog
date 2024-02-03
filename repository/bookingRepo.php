@@ -33,7 +33,7 @@ class bookingRepo
 
 		$statement->execute([$bname, $bemail, $bphone, $street, $city, $state, $zip, $visit, $day, $req]);
 
-		echo "<script> alert('Thank you for choosing JETAWAY - Bookings!'); </script>";
+		echo "<script> alert('Thank you for choosing TRAVELBLOG - Bookings!'); </script>";
 
 	}
 

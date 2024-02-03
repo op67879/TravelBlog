@@ -1,8 +1,8 @@
-/* LOG IN & REGISTER FORM*/
+/* LOG IN & REGISTER FORM */
 
 input[type=text], input[type=password] {
     width: 100%;
-    padding: 16px 8px;
+    padding: 12px;
     margin: 8px 0;
     display: inline-block;
     border: 3px solid #ccc;
@@ -10,114 +10,117 @@ input[type=text], input[type=password] {
 }
 
 .submit-btn {
-    background-color: rgb(85,49,74);
+    background-color: rgb(85, 49, 74);
     color: white;
-    padding: 14px 0;
+    padding: 10px;
     margin: 10px 0;
     border: none;
     cursor: pointer;
-    width: 80%;
-    font-size: 20px;
-}
- 
-button:hover {
-    opacity: 0.8;
+    width: 100%;
+    font-size: 14px;
 }
 
 .formcontainer {
     text-align: center;
-    margin: 24px 50px 12px;
+    margin: 24px 10px 12px;
 }
 
-.formcontainer img{
-    width: 20%;
-    padding: 25px;
+.formcontainer img {
+    width: 60%;
+    max-width: 200px;
+    padding: 15px;
 }
 
 /* REGISTER FORM */
-.login-block{
-    width: 360px;
+.login-block {
+    width: 100%;
+    max-width: 360px;
     margin: auto;
 }
-.form{
+
+.form {
     position: relative;
     z-index: 1;
     max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
+    margin: 0 auto 20px;
+    padding: 20px;
     text-align: center;
     color: white;
+}
 
+.form img {
+    width: 80%;
+    max-width: 200px;
+    padding: 15px;
 }
-.form img{
-    width: 50%;
-    padding: 25px;
-}
-.form input{
+
+.form input {
     font-family: "Roboto", sans-serif;
-    outline: 1px;
+    outline: none;
     background: #f2f2f2;
     width: 100%;
-    margin: 0 0 10px;
-    padding: 10px;
+    margin: 5px 0 10px;
+    padding: 20px;
     box-sizing: border-box;
     font-size: 14px;
 }
-.form button{
+
+.form button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    outline: 0;
+    outline: none;
     background: aliceblue;
-    border:0;
-    padding: 15px;
+    border: 0;
+    padding: 10px;
+    margin-top: 10px;
     color: #000;
     font-size: 14px;
     cursor: pointer;
-
 }
-.form button:hover,.form button:active{
+
+.form button:hover,
+.form button:active {
     background: red;
     color: #f2f2f2;
-
 }
-.form.message{
+
+.form.message {
     margin: 15px 0 0;
     color: aliceblue;
     font-size: 12px;
 }
-.form .message a{
+
+.form .message a {
     color: red;
     text-decoration: none;
-
 }
-.form .register-form{
+
+.form .register-form {
     display: none;
 }
 
-.login-form #email_error, .login-form #pass_error{
+.login-form #email_error,
+.login-form #pass_error {
     margin: 10px;
-    width: 250px;
-    font-size: 18px;
-    /*columns: #c62828;*/
+    width: 100%;
+    font-size: 16px;
     background: rgba(266, 0, 0, 0.1);
     text-align: center;
-    padding: 4px 4px;
+    padding: 4px;
     border-radius: 3px;
     border: 1px solid #EF9A9A;
-    display:none;
+    display: none;
 }
 
 /* LOG IN & REGISTER BUTTON */
 
 input[type=submit] {
-    /* margin: 10px 35px; */
-    width: 120px;
-    height: 40%;
+    width: auto;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: rgb(66, 41, 58);
-    background: #f2d9c5;
+    background: #c0babe;
     border: 3px solid rgb(66, 41, 58);
     box-shadow: 5px 5px 0 rgb(66, 41, 58),
         -5px -5px 0 rgb(66, 41, 58),
@@ -125,11 +128,11 @@ input[type=submit] {
         5px -5px 0 rgb(66, 41, 58);
     transition: 500ms ease-in-out;
 }
-  
+
 input[type=submit]:hover {
     box-shadow: 20px 5px 0 rgb(66, 41, 58), -20px -5px 0 rgb(66, 41, 58);
 }
-  
+
 input[type=submit]:focus {
     outline: none;
 }
@@ -138,12 +141,35 @@ input[type=submit] {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
-/* VALIDIMI I PASSWORD */ 
+/* VALIDIMI I PASSWORD */
 .pwd-format {
     color: white;
     font-size: 12px;
     display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .formcontainer img {
+        width: 80%;
+        max-width: 150px;
+    }
+
+    .form img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: auto;
+        height: 30px;
+        font-size: 14px;
+    }
 }
