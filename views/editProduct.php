@@ -1,5 +1,16 @@
 <?php
-	session_start(); ?>
+	$hide="";
+	session_start();
+	if(!isset($_SESSION['username'])){
+	  header("location:activitylog.php");
+	}else{
+		if($_SESSION["role"] == "admin"){
+	    	 $hide = "";
+	    }else{
+	    $hide = "hide";
+		}
+	}
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +21,12 @@
     <link rel="stylesheet" type="text/css" href="../styles/Profile.css">
     <link rel="icon" href="../images/logo.png" type="image/png">
     <title>TravelBlog | Places</title>
+    <style>
+        .hide{
+            display:none;
+        }
+
+    </style>
 </head>
 <body> 
 
@@ -44,8 +61,7 @@
 </header>
 
 <!-- EDIT PLACE -->
-<main class='profile'>
-		
+<main class='profile <?php echo $hide ?>'>	
         <?php
             include_once '../repository/productsRepo.php'; 
             $productId = $_GET['id'];

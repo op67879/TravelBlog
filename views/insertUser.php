@@ -1,5 +1,16 @@
 <?php
-	session_start(); ?>
+	$hide="";
+	session_start();
+	if(!isset($_SESSION['username'])){
+	  header("location:activitylog.php");
+	}else{
+		if($_SESSION["role"] == "admin"){
+	    	 $hide = "";
+	    }else{
+	    $hide = "hide";
+		}
+	}
+ ?>
 <!DOCTYPE html>
 <html lang="en"> 
 <head> 
@@ -10,6 +21,12 @@
     <link rel="stylesheet" type="text/css" href="../styles/Profile.css">
     <link rel="icon" href="../images/logo.png" type="image/png">
     <title>TravelBlog | Users</title>
+    <style>
+        .hide{
+            display:none;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -44,7 +61,8 @@
 </header>
 
 <!-- INSERT USER FORM -->
-<main class='profile'>
+<main class='profile <?php echo $hide ?>'>
+
     <div class="signupcontainer">
         <form class="signupform" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
 

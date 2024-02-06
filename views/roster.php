@@ -1,5 +1,16 @@
 <?php
-  session_start(); ?>
+	$hide="";
+	session_start();
+	if(!isset($_SESSION['username'])){
+	  header("location:roster.php");
+	}else{
+		if($_SESSION["role"] == "admin"){
+	    	 $hide = "";
+	    }else{
+	    $hide = "";
+		}
+	}
+ ?>
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +28,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="<?php echo $hide ?>">
 <!-- RESPONSIVE HEADER -->
 <header>
     <div class='header'>

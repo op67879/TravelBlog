@@ -1,6 +1,16 @@
-<?php 
-    session_start(); 
-?>
+<?php
+	$hide="";
+	session_start();
+	if(!isset($_SESSION['username'])){
+	  header("location:gallery.php");
+	}else{
+		if($_SESSION["role"] == "admin"){
+	    	 $hide = "";
+	    }else{
+	    $hide = "";
+		}
+	}
+ ?>
 <!DOCTYPE html> 
 <html>
  
@@ -18,7 +28,7 @@
     </style>
 </head>
 
-<body>
+<body class="<?php echo $hide ?>">
 <!-- RESPONSIVE HEADER -->
 <header>
     <div class='header'>

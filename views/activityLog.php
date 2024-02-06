@@ -1,5 +1,16 @@
 <?php
-session_start(); ?>
+	$hide="";
+	session_start();
+	if(!isset($_SESSION['username'])){
+	  header("location:activitylog.php");
+	}else{
+		if($_SESSION["role"] == "admin"){
+	    	 $hide = "";
+	    }else{
+	    $hide = "hide";
+		}
+	}
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +22,12 @@ session_start(); ?>
     <link rel="stylesheet" href="../styles/Profile.css">
     <link rel="icon" href="../images/logo.png" type="image/png">
     <title>TravelBlog | Activity Log</title>
+    <style>
+        .hide{
+            display:none;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -45,7 +62,7 @@ session_start(); ?>
     </header>
 
     <!-- ACTIVITY LOG TABLE -->
-    <main>
+    <main class="<?php echo $hide ?>">
         <h2 class='profile'>Activity log</h2>
         <div class="table-wrapper">
             <table class="fl-table">
